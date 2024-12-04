@@ -7,6 +7,7 @@ from .serializers import QuestionSerializer, FormSerializer, ResponseInputSerial
 from .models import Question, Form, Response, Answer
 from rest_framework import status
 
+
 class QuestionView(APIView):
     def get(self, request):
         questions = Question.objects.all()
